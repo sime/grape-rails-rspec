@@ -47,4 +47,10 @@ RSpec.configure do |config|
   # The different available types are documented in the features, such as in
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
+
+  RSpec.configure do |config|
+    config.include RSpec::Rails::RequestExampleGroup, type: :request, example_group: {
+      file_path: /spec\/api/
+    }
+  end
 end
