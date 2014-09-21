@@ -11,3 +11,10 @@ gem 'spring',        group: :development
 
 gem 'debugger', group: [:development, :test]
 
+
+# API
+gem 'grape'
+
+# RSpec
+gem 'rspec-rails'
+
